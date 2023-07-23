@@ -1,0 +1,64 @@
+/* Read.css */
+
+/* Container to make the table responsive */
+.table-container {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Table styling */
+  .striped-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .striped-table th,
+  .striped-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .striped-table th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Apply media query for mobile devices */
+  @media (max-width: 768px) {
+    /* Reduce font size and button padding for smaller screens */
+    .striped-table th,
+    .striped-table td {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    /* Hide table headers on mobile */
+    .striped-table th {
+      display: none;
+    }
+  
+    /* Display table cells as blocks for mobile */
+    .striped-table td {
+      display: block;
+      text-align: left;
+    }
+  
+    /* Style table rows for mobile */
+    .striped-table tbody tr {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust button styles for mobile */
+    .btn {
+      padding: 3px 6px;
+      font-size: 12px;
+    }
+  
+    /* Center buttons on mobile */
+    .table-container {
+      text-align: center;
+    }
+  }
+  

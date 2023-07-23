@@ -1,0 +1,52 @@
+/* UpdateForm.css */
+
+/* Container to center the form on mobile */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden; /* Hide horizontal scroll on mobile */
+  }
+  
+  /* Style the form elements */
+  form {
+    width: 100%;
+    max-width: 30rem; /* Limit the form width on larger screens */
+    padding: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Center the buttons on mobile */
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Adjust button styles for mobile */
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+  }
+  
+  /* Apply media query for smaller screens (mobile) */
+  @media (max-width: 768px) {
+    form {
+      padding: 0.5rem;
+    }
+    input[type="text"] {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
